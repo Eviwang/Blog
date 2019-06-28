@@ -2,6 +2,7 @@
 title: 从零开始配置一个webpack-vue项目
 date: 2018-05-29 15:53:45
 tags: [webpack,vue]
+categories: webpack
 ---
 
 
