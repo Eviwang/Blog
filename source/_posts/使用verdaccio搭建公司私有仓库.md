@@ -17,7 +17,7 @@ $> verdaccio
 warn --- config file  - /home/.config/verdaccio/config.yaml
 warn --- http address - http://localhost:4873/ - verdaccio/3.0.0
 ```
-
+<!-- more -->
 ## 发布包
 
 ```javascript
