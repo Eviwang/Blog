@@ -4,11 +4,11 @@ date: 2019-07-02 13:27:52
 tags: [npm,cli]
 ---
 
-## 0.`npm init -y` 初始化配置
+## `npm init -y` 初始化配置
 
 在`package.json`中配置版本号，和包的名字
 
-## 1.新建`index.js`文件
+## 新建`index.js`文件
 
 <!-- more -->
 ```javascript
@@ -17,7 +17,7 @@ tags: [npm,cli]
 console.log("hello world!");
 ```
 
-## 2.在package下面加入节点
+## 在package下面加入节点
 
 新建一个index为入口文件
 ```javascript
@@ -28,7 +28,7 @@ console.log("hello world!");
 }
 ```
 
-## 3、本地使用
+## 本地使用
 
 `npm link`这个会将`hello-cli`命令加入到
 `C:\Users\evi.wang\AppData\Roaming\npm`
@@ -36,7 +36,7 @@ console.log("hello world!");
 可以使用
 `hello-cli`跑起来了
 
-## 4、发布到npm
+## 发布到npm
 
 1. https://www.npmjs.com 注册帐号
 2. 创建自己的项目
