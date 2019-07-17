@@ -1,7 +1,7 @@
 ---
 title: 使用verdaccio搭建公司私有仓库
 date: 2019-07-17 15:58:07
-tags:
+tags: [npm,私有仓库]
 ---
 
 ## 安装
