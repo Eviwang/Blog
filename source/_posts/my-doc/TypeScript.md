@@ -338,7 +338,38 @@ type Constructor<T = {}> = new (...args: any[]) => T;
 ## Tips
 
 - [export default` 被认为是有害的](<https://jkchao.github.io/typescript-book-chinese/tips/avoidExportDefault.html#export-default-%E8%A2%AB%E8%AE%A4%E4%B8%BA%E6%98%AF%E6%9C%89%E5%AE%B3%E7%9A%84>)
-- 
+
+- Partial:
+
+  - ```typescript
+    type MyPartial<T> = {
+      [P in keyof T]?: [T[P]];
+    };
+    ```
+
+    
+
+- DeepPartial
+
+  - ```typescript
+    type DeepPartial<T> = {
+      [P in keyof T]?: T[P] extends Object ? DeepPartial<T[P]> : T[P];
+    };
+    ```
+
+- [infer](<https://jkchao.github.io/typescript-book-chinese/tips/infer.html#%E4%BB%8B%E7%BB%8D>)
+
+  推断出返回值类型
+
+  ```ts
+  type ReturnType<T> = T extends (...args: any[]) => infer P ? P : any;
+  ```
+
+
+
+
+
+
 
 
 
